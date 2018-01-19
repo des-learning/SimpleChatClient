@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 public class ChatClient {
     public static void main(String []args) throws IOException {
         final Socket socket = new Socket("localhost", 1286);
-        final CountDownLatch doneSignal = new CountDownLatch(2);
+        final CountDownLatch doneSignal = new CountDownLatch(1);
 
         System.out.println("Connected to the server");
 
